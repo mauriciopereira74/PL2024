@@ -1,8 +1,8 @@
 # TPC1: Processamento de informação de um ficheiro .csv
 ## 2024-02-09
 ## Autor:
-Maurício Miranda Pereira
-A95338
+- A95338
+- Maurício Miranda Pereira
 
 # Resumo
 
