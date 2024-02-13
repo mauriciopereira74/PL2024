@@ -1,4 +1,4 @@
-# TPC1: Análise de um dataset
+# TPC1: Exames Médicos Desportivos
 ## 2024-02-09
 ## Autor:
 Maurício Miranda Pereira
@@ -6,12 +6,20 @@ A95338
 
 # Procedimento
 
-Ao enfrentar a análise de um conjunto de dados sem recorrer ao módulo CSV em Python, seguimos uma abordagem estruturada. Iniciámos importando as bibliotecas essenciais, como Pandas e Numpy, para facilitar a manipulação de dados.
+Leitura e Estruturação dos Dados:
+A primeira etapa consiste na leitura de um ficheiro CSV, transformando as suas linhas numa estrutura tabular organizada. Cada linha representa um atleta, e colunas específicas são definidas para capturar informações cruciais, como idade, modalidade desportiva e resultado da avaliação.
 
-A etapa seguinte envolveu a leitura do conjunto de dados através da função pd.read_csv(), permitindo-nos explorar as informações presentes. Posteriormente, realizámos uma análise inicial, examinando as primeiras linhas e obtendo informações sobre tipos de dados e valores nulos.
+Conversão de Tipos de Dados:
+Garantindo a integridade dos dados, o código converte colunas-chave, como 'idade' e 'resultado', para tipos apropriados. Esta etapa promove a consistência dos dados, permitindo análises mais precisas.
 
-No desenvolvimento da análise, concentramo-nos em resultados específicos. Criámos uma lista ordenada alfabeticamente das modalidades desportivas únicas e calculámos as percentagens de atletas aptos e inaptos com base nos resultados da avaliação desportiva.
+Exploração das Modalidades Desportivas:
+É gerada uma lista alfabética das modalidades desportivas únicas, proporcionando uma visão abrangente das atividades atléticas representadas no conjunto de dados. Isso facilita a compreensão da diversidade de práticas desportivas envolvidas.
 
-A análise etária dos atletas foi uma parte crucial do processo. Definimos intervalos de 5 anos, começando de 0 a 4 anos, e categorizámos os atletas nesses escalões. A contagem resultante proporcionou insights sobre a distribuição de idades.
+Avaliação da Aptidão dos Atletas:
+Calcula-se a percentagem de atletas aptos e inaptos com base nos resultados da avaliação. Estas métricas oferecem uma visão instantânea do estado geral de aptidão dos participantes, fornecendo insights cruciais para estratégias de treinamento e acompanhamento.
 
-Resumidamente, esta abordagem sem o módulo CSV destacou a eficácia do Python, através das bibliotecas Pandas e Numpy, na realização de análises detalhadas. Esta metodologia proporcionou insights valiosos sobre modalidades desportivas, condição física dos atletas e distribuição etária, contribuindo para uma compreensão mais aprofundada do conjunto de dados.
+Ajuste de Escalões Etários:
+O código define intervalos específicos para os escalões etários, agrupando os atletas em faixas de cinco anos. Esta abordagem detalhada destaca a distribuição de idades, permitindo uma compreensão mais profunda da demografia dos participantes.
+
+Contagem de Atletas por Escalão Etário:
+Utilizando os intervalos definidos, o código calcula a contagem de atletas em cada faixa etária. Esta análise demográfica ajuda a identificar padrões e tendências relacionadas à idade dos participantes.
