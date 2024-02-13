@@ -1,11 +1,25 @@
 import pandas as pd
 import numpy as np
 
-# Ler o arquivo CSV
-df = pd.read_csv('emd.csv')
+# Leitura do CSV
+data = []
+with open("./emd.csv", 'r') as f:
+    lines = f.readlines()[1:]
+    for line in lines:
+        data.append(line.strip().split(','))
+
+# Criar DataFrame a partir dos dados
+columns = ["_id", "index", "dataEMD", "nome/primeiro", "nome/último", "idade", "género", 
+           "morada", "modalidade", "clube", "email", "federado", "resultado"]
+
+df = pd.DataFrame(data, columns=columns)
+
+# Converter colunas necessárias para os tipos de dados apropriados
+df['idade'] = df['idade'].astype(int)
+df['resultado'] = df['resultado'].map({'true': True, 'false': False})
 
 # Lista ordenada alfabeticamente das modalidades desportivas
-modalidades_ordenadas = sorted(df['modalidade'].unique())
+modalities_ordenadas = sorted(df['modalidade'].unique())
 
 # Percentagens de atletas aptos e inaptos para a prática desportiva
 percentagem_apto = (df['resultado'].sum() / len(df)) * 100
@@ -20,7 +34,7 @@ contagem_escaloes = pd.Series(escaloes_etarios).value_counts(sort=False)
 
 # Exibindo os resultados
 print("Lista ordenada alfabeticamente das modalidades desportivas:")
-print(modalidades_ordenadas)
+print(modalities_ordenadas)
 
 print("\nPercentagens de atletas aptos e inaptos:")
 print(f"Apto: {percentagem_apto:.2f}%")
