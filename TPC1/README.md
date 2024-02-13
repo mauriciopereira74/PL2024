@@ -1,4 +1,4 @@
-# TPC1: Exames Médicos Desportivos
+# TPC1: Processamento de informação de um ficheiro .csv
 ## 2024-02-09
 ## Autor:
 Maurício Miranda Pereira
