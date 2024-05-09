@@ -1,4 +1,4 @@
-# TPC4: Analisador Léxico
+# TPC5: Máquina de vending
 ## 2024-03-15
 ## Autor:
 - A95338
@@ -6,12 +6,15 @@
 
 # Resumo
 
-Os tokens são elementos básicos da linguagem que o analisador léxico identifica. Neste caso, os tokens são palavras-chave (como SELECT, FROM, WHERE), identificadores (nomes de colunas e tabelas), números, operadores de comparação (>=, <=, >, <, =) e a vírgula (,). Cada token é definido com uma expressão regular correspondente.
+O principal objetivo deste programa é a simulação de uma máquina de vending.
 
-O analisador ignora carateres de espaço em branco, tabulação e nova linha.
+O programa foi desenvolvido com sucesso, tendo sido implementadas todas as funcionalidades pedidas.
 
-Cada token é definido por uma função que começa com t_ seguido pelo nome do token. Dentro dessas funções, as expressões regulares correspondentes são definidas para identificar o token.
+Correr o programa:
 
-Se um caráter inválido for encontrado, a função t_error é chamada para lidar com o erro e avançar para o próximo caráter.
+```bash
+python3 main.py
+```
 
-A função principal do programa verifica se um argumento de linha de comando foi passado. Se sim, ele usa o argumento como a consulta SQL e executa o analisador léxico nessa consulta. Cada token identificado é impresso na saída padrão.
+> [!NOTE]
+> Assume-se que existe um ficheiro chamado `items.json` com a informação dos items, na raíz da diretoria. Cada item tem um código, nome, quantidade e preço.
