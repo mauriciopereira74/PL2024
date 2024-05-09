@@ -1,0 +1,92 @@
+[
+    {
+        "codigo": "16",
+        "nome": "Croissant de queijo",
+        "quantidade": 8,
+        "preco": 1.20
+    },
+    {
+        "codigo": "17",
+        "nome": "Café expresso",
+        "quantidade": 15,
+        "preco": 1.50
+    },
+    {
+        "codigo": "18",
+        "nome": "Cappuccino",
+        "quantidade": 3,
+        "preco": 2.00
+    },
+    {
+        "codigo": "19",
+        "nome": "Sanduíche de frango",
+        "quantidade": 10,
+        "preco": 2.50
+    },
+    {
+        "codigo": "20",
+        "nome": "Suco de manga",
+        "quantidade": 6,
+        "preco": 1.50
+    },
+    {
+        "codigo": "21",
+        "nome": "Suco de abacaxi",
+        "quantidade": 9,
+        "preco": 1.50
+    },
+    {
+        "codigo": "22",
+        "nome": "Água de coco",
+        "quantidade": 4,
+        "preco": 2.00
+    },
+    {
+        "codigo": "23",
+        "nome": "Chá verde",
+        "quantidade": 18,
+        "preco": 1.00
+    },
+    {
+        "codigo": "24",
+        "nome": "Cerveja artesanal",
+        "quantidade": 7,
+        "preco": 3.00
+    },
+    {
+        "codigo": "25",
+        "nome": "Hot dog gourmet",
+        "quantidade": 12,
+        "preco": 2.50
+    },
+    {
+        "codigo": "26",
+        "nome": "Empada de camarão",
+        "quantidade": 4,
+        "preco": 2.00
+    },
+    {
+        "codigo": "27",
+        "nome": "Torta de limão",
+        "quantidade": 2,
+        "preco": 2.50
+    },
+    {
+        "codigo": "28",
+        "nome": "Pão de queijo",
+        "quantidade": 20,
+        "preco": 0.80
+    },
+    {
+        "codigo": "29",
+        "nome": "Coxinha",
+        "quantidade": 8,
+        "preco": 1.50
+    },
+    {
+        "codigo": "30",
+        "nome": "Pão de chocolate",
+        "quantidade": 5,
+        "preco": 1.20
+    }
+]
